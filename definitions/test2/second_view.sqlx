@@ -1,0 +1,7 @@
+config {
+    type: "operations"
+}
+SELECT
+  *
+FROM
+  ${ref("first_view")}

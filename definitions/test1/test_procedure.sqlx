@@ -1,0 +1,11 @@
+config { type: "table",
+ }
+
+CREATE OR REPLACE PROCEDURE test2.test_procedure()
+BEGIN
+  DECLARE uid STRING;
+  SET uid = 'test procedure';
+  INSERT INTO test2.test1(name)
+    VALUES(uid);
+  SELECT uid;
+END
